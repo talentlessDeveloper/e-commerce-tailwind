@@ -1,8 +1,20 @@
+import {Routes, Route} from 'react-router-dom';
+import {Home} from './pages/Home';
+import {Login} from './pages/Login';
+import SignUp from './pages/SignUp';
+import  Layout  from './pages/Layout';
+
 function App() {
   return (
-    <div className="App text-center text-3xl font-bold underline">
-      ECOMMERCE WITH PRINCE
-    </div>
+   <>
+    <Routes>
+      <Route path="/" element={<Layout/>}/>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/signup" element={<SignUp/>}/>
+      <Route/>
+    </Routes>
+   </>
   );
 }
 
