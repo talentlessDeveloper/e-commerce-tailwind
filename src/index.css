@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /***Accessibility***/
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .mart-container {
+    @apply w-11/12 mx-auto md:w-[85%];
+  }
+
+  .header.open .hamburger-btn > span:first-child {
+    transform: rotate(45deg);
+  }
+  .header.open .hamburger-btn > span:nth-child(2) {
+    opacity: 0;
+  }
+  .header.open .hamburger-btn > span:last-child {
+    transform: rotate(-45deg) translate(0.75rem, -0.45rem);
+  }
+
+  .header.open .header-menu {
+    @apply translate-x-0 visible duration-500 transition-[transform_300,visibility_500];
+  }
+
+  .header-menu {
+    @apply -translate-x-full invisible;
+  }
+
+  .menu-link {
+    @apply text-xl text-white;
+  }
+
+  .menu-link-active {
+    @apply text-black;
+  }
+}
