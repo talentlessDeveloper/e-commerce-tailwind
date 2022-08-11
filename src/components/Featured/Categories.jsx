@@ -11,7 +11,7 @@ import textiles from "../../assets/martTextures.png";
 function Categories() {
   return (
     <section className="categories">
-      <div className="mart-container pt-8 pb-9 md:pt-[3.75rem] md:pb-[4.375rem] ">
+      <div className="mart-container pt-8 md:pt-[3.75rem]">
         <h2 className="mb-9 font-playFair text-3xl text-martBlack">
           Categories
         </h2>
