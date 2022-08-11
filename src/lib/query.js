@@ -1,0 +1,1 @@
+export const fetchAllProductsquery = `*[_type == "product"]`
