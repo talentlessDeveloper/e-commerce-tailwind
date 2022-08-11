@@ -43,4 +43,21 @@
   .menu-link-active {
     @apply text-black;
   }
+
+  /* .categories .grid-cont {
+    grid-template-rows: 11.25rem auto;
+  } */
+
+  .categories figure,
+  .categories img {
+    @apply w-full h-full transition-transform duration-500;
+  }
+
+  .categories img {
+    object-fit: cover;
+  }
+
+  .categories figure {
+    @apply hover:scale-105 md:hover:scale-x-110;
+  }
 }
